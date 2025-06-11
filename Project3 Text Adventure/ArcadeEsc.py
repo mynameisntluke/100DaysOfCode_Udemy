@@ -47,8 +47,17 @@ if user_input == "EXAMINE":
           "its new position: 0241. Something else to fix but definitely not now.")
     time += 1
     input("Press ENTER to continue")
-elif user_input == "EXIT":
-    print("""You practically jog for one of the doors, as you push against it it doesn't budge. You try another.
+
+
+    input("""You practically jog for one of the doors, as you push against it it doesn't budge. You try another.
           Nothing. As you try a third, you take a look out the window, it's not dark outside. It's empty. 
           A perfect void. The view is one of a sleek uniform black, perhaps it's just the windows? 
           """)
+
+input("Before you can investigate further you notice a message has been etched on each window. It's crude but legible: ")
+
+input("'Freedom is yours if you gather twenty tickets before the witching hour of 3, damnation is yours for anything less'")
+
+time+=1
+
+input("This all seems insane to you but without any better plan you decide to follow the instructions. The minute hands screeches again: ")
