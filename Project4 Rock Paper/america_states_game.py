@@ -1,9 +1,39 @@
 import random
+from american_states import state_names
 states_to_guess = 5
+lives = "*****"
+points = 0
 
-state_names = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
 
-rand_state_ref = random.randint(0, len(state_names)-1)
-rand_state = state_names[rand_state_ref]
+for n in range(states_to_guess):
 
-print(rand_state.rsplit())
+    rand_state_ref = random.randint(0, len(state_names)-1)
+    rand_state = state_names[rand_state_ref]
+
+    print(f"\nPoints: {points}")
+    print(f"{rand_state[0:3]}______:")
+    guess = input()
+    if guess.lower() == rand_state.lower():
+        print("CORRECT!")
+        # Remove from list so as not to be repeated
+        state_names.pop(rand_state_ref)
+        points += 1
+    elif guess.lower() == "cheat":
+        print(f"The state is: {rand_state}")
+        # Remove from list so as not to be repeated
+        state_names.pop(rand_state_ref)
+    else:
+        # One more try
+        print("Try again!")
+        print(f"{rand_state[0:4]}______:")
+        guess = input()
+        if guess.lower() == rand_state.lower():
+            print("CORRECT!")
+            # Remove from list so as not to be repeated
+            state_names.pop(rand_state_ref)
+            points += 1
+        else:
+            print("NAH!!!")
+            print(f"The correct state was: {rand_state}")
+
+print("\n Goodbye for now")
