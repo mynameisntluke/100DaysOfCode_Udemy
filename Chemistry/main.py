@@ -12,24 +12,24 @@ def run_app():
         user_choice = input("1) Guess the correct Element from its symbol\n"
               "2) Guess the correct Symbol from its chemical name\n"
               "3) For review\n"
-              "4) Exit\n")
+              "4) Settings\n"
+              "5) Exit\n")
 
-        #TODO 5: make a proper try-except clause
         try:
             user_choice = int(user_choice)
         except:
-            print("Please enter a number.")
+            user_choice = "wrong"
 
         if user_choice == 1:
             guess_the_element_name()
         elif user_choice == 2:
             guess_the_symbol_name()
-        elif user_choice == 4:
-            running = False
         elif user_choice == 3:
             review()
-        elif user_choice == 5:
+        elif user_choice == 4:
             settings()
+        elif user_choice == 5:
+            running = False
         else:
             print("Sorry incorrect input")
 
@@ -74,7 +74,6 @@ def guess_the_symbol_name(debug = False, lives = 10, win_condition = 15):
     """Give user the elements name, user must guess
     the symbol, the winning condition is ten correct
     answers, the losing condition is ten incorrect """
-    #TODO 4: Change code (currently a copy of the above game)
     lives = lives
     correct = 0
     # A list of elements tuples
@@ -114,9 +113,27 @@ def guess_the_symbol_name(debug = False, lives = 10, win_condition = 15):
 
 def settings():
     #TODO 1: Implement setting
-    pass
+    #user_input = input("1) If you wish to reduce periodic table to the first n Elements\n")
+
+    elements = reduce_element_dict()
+
+
+def reduce_element_dict(n = 10):
+    """Creates and returns a dictionary with the first n elements of the elements dictionary"""
+    m = 0
+    placeholder_dict = {}
+    for element in elements:
+        m += 1
+        if m <= n:
+            placeholder_dict[element] = elements[element]
+
+    return placeholder_dict
+
+
+
 
 def review():
+    """Prints a table of all elements"""
     table = PrettyTable()
     element_numbers = make_num_row(len( list(elements.keys()) ))
     table.add_column("Atomic Number", element_numbers)
@@ -125,6 +142,8 @@ def review():
     print(table)
 
 def make_num_row(n):
+    """returns a list containing n numbers where n is the number of elements. Used for
+    producing the table in review()"""
     num_list = []
     for i in range(1, n+1):
         num_list.append(i)
