@@ -1,11 +1,11 @@
-
 # Made during DAY17- OOP Quiz
 
 from words import words
 import random
 
+
 class JapanApp:
-    def __init__(self, lives = 10):
+    def __init__(self, lives=10):
         self.word_dict = words
         self.current_word = ""
         self.lives = lives
@@ -33,9 +33,7 @@ class JapanApp:
     def get_current_word_jp(self):
         """Returns current word in Japanese"""
         return self.word_dict[self.current_word]["Japanese"][0]
-        
+
     def get_example_text(self):
-    	"""Returns an example sentence for the currenr word"""
-    	return self.word_dict[self.current_word]["example"]
-
-
+        """Returns an example sentence for the current word"""
+        return self.word_dict[self.current_word]["example"]

@@ -1,27 +1,30 @@
 import random
 
+#TODO 1: User can chose how many elements they want in the __init__ phase
+
 class ChemApp:
     def __init__(self):
         from elements import elements
         self.elements = elements
-        self.current_element = ""
-
+        self.current_element_symbol = ""
+        self.current_element_name = ""
         self.set_random_element()
 
 
     def set_random_element(self):
-        """Gets a random key from classes own chemistry element dictionary
-        and returns it"""
+        """Gets a random key/value pair from the element dictionary and sets them to current element"""
         keys = list(self.elements.keys())
-        self.current_element = random.choice(keys)
+        self.current_element_symbol = random.choice(keys)
+        self.current_element_name = self.elements[self.current_element_symbol]
 
     def delete_current_element(self):
         """Deletes entry from dictionary using the key set to
         current element"""
-        self.elements.pop(self.current_element)
+        self.elements.pop(self.current_element_symbol)
 
+    def get_current_element_name(self):
+        return self.current_element_name
 
-
-
-test_app = ChemApp()
+    def get_current_element_symbol(self):
+        return self.current_element_symbol
 
