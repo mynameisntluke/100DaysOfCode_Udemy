@@ -1,6 +1,9 @@
 from chemistry_app import ChemApp
 import random
 
+#TODO 1 Make other User choices active again
+#TODO 2: User can chose how many elements they want in the __init__ phase
+
 LIVES = 10
 chem = ChemApp()
 

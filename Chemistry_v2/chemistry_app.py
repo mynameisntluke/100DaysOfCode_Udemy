@@ -1,6 +1,5 @@
 import random
 
-#TODO 1: User can chose how many elements they want in the __init__ phase
 
 class ChemApp:
     def __init__(self):

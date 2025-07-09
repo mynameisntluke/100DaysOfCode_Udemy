@@ -51,6 +51,18 @@ quotes = {
         "quote": "Always go too far because that's where you'll find the truth.",
         "author": "Albert Camus"
     },
+    14: {
+        "quote": "Respect was invented to cover the empty place where love should be.",
+        "author": "Leo Tolstoy"
+    },
+    15: {
+        "quote": "We are more often frightened than hurt,and we suffer more from imagination than from reality.",
+        "author": "Seneca"
+    },
+    16: {
+        "quote": "Power is tearing human minds to pieces and putting them together again in new shapes of your own.",
+        "author": "George Orwell"
+    },
 
 }
 
