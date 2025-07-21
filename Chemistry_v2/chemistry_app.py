@@ -27,3 +27,10 @@ class ChemApp:
     def get_current_element_symbol(self):
         return self.current_element_symbol
 
+    def set_element_dict(self, n):
+        """Reduces element list to the first n elements"""
+        dict_reduced = {}
+        keys_reduced = list(self.elements.keys())[:n]
+        for key in keys_reduced:
+            dict_reduced[key] = self.elements[key]
+        self.elements = dict_reduced

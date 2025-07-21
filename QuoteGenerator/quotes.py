@@ -40,8 +40,8 @@ quotes = {
         "author": "Henry Mencken"
     },
     11: {
-        "quote": "Well done is better tha well said.",
-        "author": "Benjamin Franklin"
+        "quote": "Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.",
+        "author": "Marcus Aurelius"
     },
     12: {
         "quote": "If you want to go fast, go alone. If you want to go far, go together.",
@@ -63,6 +63,23 @@ quotes = {
         "quote": "Power is tearing human minds to pieces and putting them together again in new shapes of your own.",
         "author": "George Orwell"
     },
+    17: {
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    18: {
+        "quote": "Neo, sooner or later you're going to realize, just as I did, that there's a difference between knowing the path and walking the path.",
+        "author": "Morpheus  -  The Matrix"
+    },
+    19: {
+        "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+        "author": "Thomas Edison"
+    },
+    20: {
+        "quote": "The first principle is that you must not fool yourself and you are the easiest person to fool.",
+        "author": "Richard Feynman"
+    },
+
 
 }
 

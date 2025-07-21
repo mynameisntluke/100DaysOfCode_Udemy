@@ -1,6 +1,8 @@
 from quotes import quotes
 import random
 
+#TODO 1 User can add quotes
+
 class QuoteHandler():
     def __init__(self):
         self.quote_dict = quotes
@@ -12,6 +14,7 @@ class QuoteHandler():
         print(f"\n\t\"{quotes[self.ref]['quote']}\" \n\t\t-{quotes[self.ref]['author']}\n")
 
     def remove_quote(self):
+        """Removes quote from dictionary"""
         del self.quote_dict[self.ref]
 
     def is_empty(self):
