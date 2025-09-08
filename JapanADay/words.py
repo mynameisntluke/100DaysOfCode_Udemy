@@ -1,25 +1,50 @@
+import datetime
+
 PLACEHOLDER = "[____]"
 
 words = {
-    "Add": {
-        "Japanese": ["たす"],
-        "example": f" "
+    "To be mad (v)": {
+        "japanese": "おこる",
+        "date": datetime.datetime(2025, 9,8),
+        "example": "父は私に[　]います"
     },
-    "Minus": {
-        "Japanese": ["ひく"],
-        "example": " "
+    "Grades/Results (n)": {
+        "japanese": "せいせき",
+        "date": datetime.datetime(2025, 9,8),
+        "example": "しけんの[　]はどうだった"
     },
-    "Multiply": {
-        "Japanese": ["かける"],
-        "example": f"五{PLACEHOLDER}四は二十です "
+    "To get fired (v)": {
+        "japanese": "くびになる",
+        "date": datetime.datetime(2025, 9,8),
+        "example": "山田さんが[　]と聞きました"
     },
-    "Divide": {
-        "Japanese": ["わる"],
-        "example": f"１０{PLACEHOLDER}には５です"
+    "Formal form of because (g)": {
+        "japanese": "ので",
+        "date": datetime.datetime(2025, 9,8),
+        "example": "お金がない[　]レストランに行けません"
     },
-    "At least [adverb]": {
-        "Japanese": ["すくなくとも"],
-        "example": f"私は、{PLACEHOLDER}　10冊の本を持っている"
+    "Informal form of 'I wonder...'": {
+        "japanese": "かな",
+        "date": datetime.datetime(2025, 9,8),
+        "example": "明日は雨がふる[　]"
     },
-
+    # "":
+    #     {"japanese": "かそえる"},
+    # "equal, alike":
+    #     {"japanese": "ひとしい"},
+    # "residents":
+    #     {"japanese": "じゅうんみん"},
+    # "turn (in a queue)":
+    #     {"japanese": "じゅんはん"},
+    # "undress, take off clothes":
+    #     {"japanese": "ぬぐ"},
+    # "branch (of a tree)":
+    #     {"japanese": "えだ"},
+    # "toy": {"japanese": "おもちゃ"},
+    # "fold (paper)":
+    #     {"japanese": "おる"},
+    # "underwear, lingerie":
+    #     {"japanese": "したぎ"},
+    # "sand":
+    #     {"japanese": "すな"}
 }
