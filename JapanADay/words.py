@@ -28,6 +28,31 @@ words = {
         "date": datetime.datetime(2025, 9,8),
         "example": "明日は雨がふる[　]"
     },
+    "To cry (v)": {
+        "japanese": "なく",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Tears (n)": {
+        "japanese": "なみだ",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Lost, uncertain (v)": {
+        "japanese": "まよう",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Scenery, Landscape": {
+        "japanese": "けいき",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Recycling": {
+        "japanese": "リサイクル",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
     # "":
     #     {"japanese": "かそえる"},
     # "equal, alike":
