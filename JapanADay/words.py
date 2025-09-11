@@ -53,6 +53,56 @@ words = {
         "date": datetime.datetime(2025, 9,9),
         "example": ""
     },
+    "To cry (v)": {
+        "japanese": "なく",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Tears (n)": {
+        "japanese": "なみだ",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Lost, uncertain (v)": {
+        "japanese": "まよう",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Scenery, Landscape": {
+        "japanese": "けいき",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Recycling": {
+        "japanese": "リサイクル",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
+    "Smile": {
+        "japanese": "びしょお",
+        "date": datetime.datetime(2025, 9,11),
+        "example": ""
+    },
+    "Bored": {
+        "japanese": "あきる",
+        "date": datetime.datetime(2025, 9,11),
+        "example": ""
+    },
+    "Proud": {
+        "japanese": "ほこる",
+        "date": datetime.datetime(2025, 9,11),
+        "example": ""
+    },
+    "Confident": {
+        "japanese": "じしん",
+        "date": datetime.datetime(2025, 9,11),
+        "example": ""
+    },
+    "Shy": {
+        "japanese": "はにかむ",
+        "date": datetime.datetime(2025, 9,9),
+        "example": ""
+    },
     # "":
     #     {"japanese": "かそえる"},
     # "equal, alike":
